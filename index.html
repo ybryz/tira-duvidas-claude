@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tira-dúvidas Claude</title>
+  <meta name="description" content="Chatbot para tirar dúvidas sobre o Claude Code: skills, agentes, MCP, hooks, CLAUDE.md e mais.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar" aria-label="Tópicos">
+      <div class="brand">
+        <span class="logo" aria-hidden="true">✺</span>
+        <div>
+          <h1>Tira-dúvidas Claude</h1>
+          <p>Skills, agentes e tudo mais</p>
+        </div>
+      </div>
+      <nav id="topics" class="topics"></nav>
+      <p class="note">Respostas baseadas em uma base de conhecimento local. Para detalhes e novidades, consulte a <a href="https://docs.claude.com/pt-BR/docs/claude-code" target="_blank" rel="noopener">documentação oficial</a>.</p>
+    </aside>
+
+    <main class="chat">
+      <header class="chat-header">
+        <button id="menuBtn" class="icon-btn menu-btn" aria-label="Abrir tópicos">☰</button>
+        <h2>Pergunte sobre o Claude</h2>
+        <button id="clearBtn" class="icon-btn" title="Limpar conversa">Limpar</button>
+      </header>
+
+      <section id="messages" class="messages" aria-live="polite"></section>
+
+      <form id="form" class="composer" autocomplete="off">
+        <input id="input" type="text" placeholder="Ex.: como criar uma skill?" aria-label="Sua pergunta" maxlength="300">
+        <button type="submit" aria-label="Enviar">Enviar</button>
+      </form>
+    </main>
+  </div>
+  <div id="backdrop" class="backdrop" hidden></div>
+
+  <script src="kb.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
