@@ -1,4 +1,4 @@
-# Tira-dúvidas Claude
+# Teste de Chatbot
 
 Chatbot em português para tirar dúvidas sobre o Claude Code: skills, subagents, `CLAUDE.md`, MCP, hooks, comandos e mais.
 
